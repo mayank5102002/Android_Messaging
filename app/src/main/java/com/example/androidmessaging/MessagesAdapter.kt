@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androidmessaging.databinding.MessageListViewBinding
 
+//Messages adapter for messages activity
 class MessagesAdapter(val clickListener : MessageClickListener) : ListAdapter<MessageThread, MessagesAdapter.ViewHolder>(MessagesDiffCallBack()) {
     //Function returning viewholder after creating it
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -39,6 +40,8 @@ class MessagesAdapter(val clickListener : MessageClickListener) : ListAdapter<Me
             binding.agent.text = agent
             binding.datestamp.text = item.timestamp.subSequence(0, 10)
             binding.timestamp.text = item.timestamp.subSequence(11, 19)
+
+            //Click listener for when the object is clicked
             binding.messageListViewRoot.setOnClickListener{
                 clickListener.onClick(item)
             }

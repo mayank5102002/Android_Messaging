@@ -5,6 +5,8 @@ import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.Volley
 
+//Singleton class of Volley, which can be called from anywhere in the project
+// to make volley http requests without having to create new requestQueue everytime
 class volleySingleton constructor(context: Context) {
     companion object {
         @Volatile

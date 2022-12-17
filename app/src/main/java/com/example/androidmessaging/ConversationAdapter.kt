@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.androidmessaging.databinding.ConversationListViewBinding
 import com.example.androidmessaging.databinding.MessageListViewBinding
 
+//Adapter for conversation activity
 class ConversationAdapter() : ListAdapter<MessageThread, ConversationAdapter.ViewHolder>(MessagesDiffCallBack()) {
     //Function returning viewholder after creating it
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
