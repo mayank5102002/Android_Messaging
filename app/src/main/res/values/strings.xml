@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Android Messaging</string>
+
+    //Login Fragment
+    <string name="username">Username :</string>
+    <string name="password">Password :</string>
+    <string name="usernameEnter">Enter Username</string>
+    <string name="passwordEnter">Enter Password</string>
+    <string name="loginButton">Login</string>
+
+    //False login error
+    <string name="errorTitle">Invalid Login Credentials</string>
+    <string name="removeError">Retry</string>
+
+    //Send Message
+    <string name="messageHint">Enter Message</string>
+    <string name="sendButton">Send</string>
+
+    //Login Shared Preferences
+    <string name="login_preferences_name">login_preferences</string>
+    <string name="logIn_bool">logged_in_boolean</string>
+    <string name="logIn_token">user_token</string>
+
+    //Menu buttons
+    <string name="menu_reset_button">Reset</string>
+    <string name="menu_logout_button">Logout</string>
+
+    <string name="login_toast">If <b><u>already logged in</u></b>,
+        <b><u>press login button</u></b>
+        without entering anything in the provided fields.</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginActivity2">
+    <fragment
+        android:id="@+id/loginActivity2"
+        android:name="com.example.androidmessaging.LoginActivity"
+        android:label="LoginActivity" >
+        <action
+            android:id="@+id/action_loginActivity2_to_messagesActivity2"
+            app:destination="@id/messagesActivity2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/messagesActivity2"
+        android:name="com.example.androidmessaging.MessagesActivity"
+        android:label="MessagesActivity" >
+        <action
+            android:id="@+id/action_messagesActivity2_to_conversationActivity2"
+            app:destination="@id/conversationActivity2" />
+        <argument
+            android:name="auth_token"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/conversationActivity2"
+        android:name="com.example.androidmessaging.ConversationActivity"
+        android:label="ConversationActivity" >
+        <argument
+            android:name="customerId"
+            app:argType="string" />
+    </fragment>
+</navigation>
